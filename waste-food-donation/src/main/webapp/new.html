@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Food Donation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Waste Food Donation</h1>
+        <p>Helping those in need by reducing food waste</p>
+    </header>
+
+    <main>
+        <section id="donation-form">
+            <h2>Donate Food</h2>
+            <form id="foodDonationForm">
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" name="userName" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="foodName">Food Name:</label>
+                <input type="text" id="foodName" name="foodName" placeholder="Enter food name" required>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required>
+
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="date" id="expiryDate" name="expiryDate" required>
+
+                <label for="location">Pickup Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter pickup location" required>
+
+                <button type="button" onclick="submitDonation()">Donate Now</button>
+            </form>
+        </section>
+        <section id="donation-list">
+            <h2>Food Donations</h2>
+            <ul id="donations"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
